@@ -69,6 +69,7 @@ public class Patient {
 		}
 		student.push("Fred");
 		System.out.println(" Element on Top: " + student.peek());
+		System.out.println("Hello Collection Api");
 		
 	}
 	
