@@ -3,7 +3,9 @@ package com.collection.concept.util;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.Stack;
 import java.util.TreeSet;
+import java.util.Vector;
 
 public class Patient {
 	
@@ -27,18 +29,46 @@ public class Patient {
 		System.out.println("\n**********");
 		System.out.println("\nSet Implementation");
 		
-		Set<Integer> grade = new TreeSet<>();
-		grade.add(40);
-		grade.add(20);
-		grade.add(25);
-		grade.add(28);
-		grade.add(55);
-		grade.add(30);
-		grade.add(20);
+		Set<String> grade = new TreeSet<>();
+		grade.add("Gama");
+		grade.add("Abel");
+		grade.add("Aaron");
+		grade.add("Cliff");
+		grade.add("Clif");
+		grade.add("Amin");
+		grade.add("Henry");
+		grade.add("Daud");
+		grade.add("Aaron");
 		
-		for (int gg : grade) {
-			System.out.print(gg + " ");
+		for (String ss : grade) {
+			System.out.print(ss + " ");
 		}
+		System.out.println("\n **************\n");
+	Vector<Character>mygrade=new Stack<>();
+		mygrade.add('A');
+		mygrade.add('A');
+		mygrade.add('A');
+		mygrade.add('A');
+		mygrade.add('A');
+		mygrade.add('A');
+		
+		for (char cc : mygrade) {
+			System.out.print(cc + " ");
+		}
+		System.out.println("*************");
+		Stack<String> student = new Stack<>();
+		student.add("Balaba");
+		student.add("Difas");
+		student.add("RoseMary");
+		student.pop();
+		student.add("Kakuye");
+		student.add("Kaliisa");
+		System.out.println(" Element on Top: " + student.peek());
+		for (String sss : student) {
+			System.out.println(sss);
+		}
+		student.push("Fred");
+		System.out.println(" Element on Top: " + student.peek());
 		
 	}
 	
